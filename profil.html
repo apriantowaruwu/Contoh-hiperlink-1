@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 80px; /* Agar tidak tertutup tombol atas */
+            background-color: #c5c1c4;
+        }
+
+        /* Latar kuning + tombol kembali di posisi paling atas */
+        .back-button-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f5dd04;
+            padding: 10px 0;
+            box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.37);
+            z-index: 999;
+        }
+
+        .back-button {
+            margin-left: 20px;
+        }
+
+        .back-button a {
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .back-button a:hover {
+            background-color: #b30000;
+        }
+
+        .profil-container {
+            background-color: rgb(240, 236, 236);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.493);
+            max-width: 600px;
+            margin: 40px auto 40px auto;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+        }
+
+        .header img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .identitas {
+            margin-top: 20px;
+        }
+
+        .identitas .baris {
+            display: flex;
+            margin: 6px 0;
+        }
+
+        .identitas .label {
+            width: 70px;
+            font-weight: bold;
+        }
+
+        .identitas .isi {
+            flex: 1;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 190px;
+            font-size: 14px;
+            color: rgba(14, 13, 13, 0.692);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Latar kuning dan tombol kembali -->
+    <div class="back-button-container">
+        <div class="back-button">
+            <a href="index.html">&larr; Kembali ke Menu</a>
+        </div>
+    </div>
+
+    <!-- Kotak Profil -->
+    <div class="profil-container">
+        <div class="header">
+            <img src="image/l.jpg" alt="l.jpg">
+            <h2>Profil Saya</h2>
+        </div>
+
+        <div class="identitas">
+            <div class="baris"><span class="label">Nama</span><span class="isi">: Aprianto Waruwu</span></div>
+            <div class="baris"><span class="label">NIM</span><span class="isi">: 221011401687</span></div>
+            <div class="baris"><span class="label">Kelas</span><span class="isi">: 25TPLX001</span></div>
+            <div class="baris"><span class="label">Hobi</span><span class="isi">: Semua olahraga, melukis, membaca, dll.</span></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 - Website ini dibuat oleh Aprianto Waruwu
+    </div>
+
+</body>
+</html>

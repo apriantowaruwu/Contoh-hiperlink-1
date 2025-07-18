@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 80px; /* Supaya konten tidak tertutup tombol kembali */
+            background-color: #d6d4d4;
+        }
+
+        /* Tombol kembali + latar kuning */
+        .back-button-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffe600;
+            padding: 10px 0;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.342);
+            z-index: 999;
+        }
+
+        .back-button {
+            margin-left: 20px;
+        }
+
+        .back-button a {
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.466);
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .back-button a:hover {
+            background-color: #b30000;
+        }
+
+        .about-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.404);
+        }
+
+        h2 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin: 60px 0 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tombol kembali -->
+    <div class="back-button-container">
+        <div class="back-button">
+            <a href="index.html">&larr; Kembali ke Menu</a>
+        </div>
+    </div>
+
+    <!-- Konten About -->
+    <div class="about-container">
+        <h2>Ini adalah halaman About</h2>
+        <p>
+            Halo! Saya <strong>Aprianto Waruwu</strong>, mahasiswa dari<strong> Universitas Pamulang</strong> Jurusan<strong>Teknik Informatika S1</strong>.
+        </p>
+        <p>
+            Website ini saya buat sebagai bagian dari pembelajaran pemrograman web. Tujuan utamanya adalah untuk menampilkan berbagai informasi pribadi seperti profil, galeri foto, kontak, dan aktivitas saya.
+        </p>
+        <p>
+            Dengan adanya website ini, saya berharap dapat membagikan pengalaman, inspirasi, dan juga memperkenalkan diri lebih jauh secara digital. Terima kasih sudah mengunjungi halaman saya!
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025 - Website ini dibuat oleh Aprianto Waruwu
+    </div>
+
+</body>
+</html>
